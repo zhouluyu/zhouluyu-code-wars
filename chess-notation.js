@@ -14,9 +14,6 @@ function chessNotation(notation) {
 	board.map((x, i) => {
 		board[i] = board[i].split('');
 		newBoard[i] = [];
-	})
-
-	board.map((x, i) => {
 		board[i].map((y, j) => {
 			newBoard[i][j] = board[7-j][i];
 		})
@@ -35,5 +32,3 @@ function chessNotation(notation) {
 
 	return newNotation;
 }
-  
-  
